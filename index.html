@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="Add()">Add User's</button>
+
+
+    <script>
+        let arr = [];
+        function Add() {
+            let ArrNum = prompt("Enter How many user's you want to add");
+            for (i = 0; i < ArrNum; i++) {
+                let user = {
+                    Name: prompt("Enter Name"),
+                    FatherName: prompt("Enter Father Name"),
+                    Age: parseInt(prompt("Enter Age")),
+                }
+                arr.push(user);
+                console.log(arr);
+            }
+        }
+    </script>
+</body>
+
+</html>
